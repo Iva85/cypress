@@ -29,10 +29,10 @@ describe("Login test", () => {
         cy.get('#password').clear().type('testtest')
         cy.get('button').click()
     })
-    /*it ('Login', () => {
+    it ('Login', () => {
         cy.get('#email').type('ivatest11@test.com')
         cy.get('#password').type('test1234')
         cy.get('button').click()
-    })*/
+    })
     
 })
