@@ -1,0 +1,21 @@
+{
+    "login" : {
+        "email" : "#email",
+        "password" : "#password",
+        "submit" : "button[type='submit']",
+        "navLogin" : "a[href='/login']"
+    },
+    "logout" : {
+        "navLogout" : ".ml-auto > :nth-child(3) > .nav-link"
+    },
+    "register" : {
+        "firstName" : "#first-name",
+        "lastName" : "#last-name",
+        "email" : "#email",
+        "password" : "#password",
+        "passwordConfirmation" : "#password-confirmation",
+        "terms" : ".form-check-input",
+        "submit" : ".btn",
+        "navRegister" : "li:nth-of-type(2) > .nav-buttons.nav-link"
+    }
+}
