@@ -26,10 +26,15 @@ describe("Login and create gallery", () => {
 
     it ('Create new gallery', () => {
         createGallery.createNewGallery(
-            'Iva test new 1',
-            'Test description new 1',
+            'a',
+            'Something in description',
             'https://images.all-free-download.com/images/graphicthumb/hd_flower_picture_01_hd_pictures_167032.jpg'
             )
+            
+        createGallery.titleTooSHort
+        .should('contain', data.errors.galleryTitleTooShort)
+        .and('have.css', 'background-color', 'rgb(248, 215, 218)')
+        //.and('include', 'cypress.io')
     })
     
 })

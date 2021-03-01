@@ -49,6 +49,26 @@ class CreateGallery {
         this.createSubmitButton.click()
     }*/
 
+    get titleTooSHort() {
+        return cy.get(".alert")
+    }
+
+    get filterGalleries() {
+        return cy.get('input[type="text"]')
+    }
+
+    get filterButton() {
+        return cy.get(".input-group-append > .btn");
+    }
+
+    clickFilterButton() {
+        this.filterButton.click()
+    }
+
+    get filteredGalleries () {
+        return cy.get("h2 > .box-title")
+    }
+
 }
 
 export const createGallery = new CreateGallery()
