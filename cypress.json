@@ -1,3 +1,7 @@
 {
-    "baseUrl": "https://gallery-app.vivifyideas.com/"
+    "baseUrl": "https://gallery-app.vivifyideas.com/",
+    "env" : {
+        "user_email": "ivatest2@test.com",
+        "user_password": "test1234"
+    }
 }
